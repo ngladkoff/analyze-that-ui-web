@@ -17,7 +17,7 @@
           </div>
           <div>Lorem ipsum...</div>
           <CProgress
-            color="gradient-success"
+            color="success"
             :value="25"
             class="progress-xs my-3 mb-0"
           />
@@ -28,7 +28,7 @@
           header="12.124"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-info"
+          color="info"
           :value="25"
         />
       </CCol>
@@ -37,7 +37,7 @@
           header="$98.111,00"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-warning"
+          color="warning"
           :value="25"
         />
       </CCol>
@@ -46,7 +46,7 @@
           header="2 TB"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-danger"
+          color="danger"
           :value="25"
         />
       </CCol>
@@ -57,7 +57,7 @@
           header="89.9%"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-success"
+          color="success"
           inverse :value="25"
         />
       </CCol>
@@ -66,7 +66,7 @@
           header="12.124"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-info"
+          color="info"
           inverse
           :value="25"
         />
@@ -76,7 +76,7 @@
           header="$98.111,00"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-warning"
+          color="warning"
           inverse
           :value="25"
         />
@@ -86,7 +86,7 @@
           header="2 TB"
           text="Lorem ipsum..."
           footer="Lorem ipsum dolor sit amet enim."
-          color="gradient-danger"
+          color="danger"
           inverse
           :value="25"
         />
@@ -97,7 +97,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-primary"
+          color="primary"
         >
           <CIcon name="cil-settings" width="24"/>
         </CWidgetIcon>
@@ -106,7 +106,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-info"
+          color="info"
         >
           <CIcon name="cil-laptop" width="24"/>
         </CWidgetIcon>
@@ -115,7 +115,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-warning"
+          color="warning"
         >
           <CIcon name="cil-moon" width="24"/>
         </CWidgetIcon>
@@ -124,7 +124,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-danger"
+          color="danger"
         >
           <CIcon name="cil-bell" width="24"/>
         </CWidgetIcon>
@@ -135,7 +135,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-primary"
+          color="primary"
           :icon-padding="false"
         >
           <CIcon name="cil-settings" width="24"/>
@@ -145,7 +145,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-info"
+          color="info"
           :icon-padding="false"
         >
           <CIcon name="cil-laptop" width="24"/>
@@ -155,7 +155,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-warning"
+          color="warning"
           :icon-padding="false"
         >
           <CIcon name="cil-moon" width="24"/>
@@ -165,7 +165,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-danger"
+          color="danger"
           :icon-padding="false"
         >
           <CIcon name="cil-bell" width="24"/>
@@ -177,7 +177,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-primary"
+          color="primary"
           :icon-padding="false"
         >
           <CIcon name="cil-settings" class="mx-5 " width="24"/>
@@ -187,7 +187,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-info"
+          color="info"
           :icon-padding="false"
         >
           <CIcon name="cil-laptop" class="mx-5 " width="24"/>
@@ -197,19 +197,18 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-warning"
+          color="warning"
           :icon-padding="false"
         >
           <CIcon name="cil-moon" class="mx-5 " width="24"/>
           <template #footer>
-            <CCardFooter class="px-3 py-2">
+            <CCardFooter class="card-footer px-3 py-2">
               <CLink
-                class="font-weight-bold font-xs text-muted d-flex justify-content-between"
+                class="font-weight-bold font-xs btn-block text-muted"
                 href="https://coreui.io/"
-                target="_blank"
               >
                 View more
-                <CIcon name="cil-arrow-right" width="16"/>
+                <CIcon name="cil-arrowRight" class="float-right" width="16"/>
               </CLink>
             </CCardFooter>
           </template>
@@ -221,7 +220,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-primary"
+          color="primary"
           :icon-padding="false"
           link="#"
         >
@@ -232,7 +231,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-info"
+          color="info"
           :icon-padding="false"
           link="#"
         >
@@ -243,7 +242,7 @@
         <CWidgetIcon
           header="$1.999,50"
           text="Income"
-          color="gradient-warning"
+          color="warning"
           :icon-padding="false"
           link="#"
         >
@@ -257,21 +256,21 @@
       <CWidgetProgressIcon
         header="87.500"
         text="Visitors"
-        color="gradient-info"
+        color="info"
       >
         <CIcon name="cil-people" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="385"
         text="New Clients"
-        color="gradient-success"
+        color="success"
       >
         <CIcon name="cil-userFollow" height="36"/>
       </CWidgetProgressIcon>
       <CWidgetProgressIcon
         header="1238"
         text="Products sold"
-        color="gradient-warning"
+        color="warning"
       >
         <CIcon name="cil-basket" height="36"/>
       </CWidgetProgressIcon>
@@ -284,7 +283,7 @@
       <CWidgetProgressIcon
         header="5:34:11"
         text="Avg. Time"
-        color="gradient-danger"
+        color="danger"
       >
         <CIcon name="cil-speedometer" height="36"/>
       </CWidgetProgressIcon>
@@ -293,7 +292,7 @@
       <CWidgetProgressIcon
         header="87.500"
         text="Visitors"
-        color="gradient-info"
+        color="info"
         inverse
       >
         <CIcon name="cil-people" height="36"/>
@@ -301,7 +300,7 @@
       <CWidgetProgressIcon
         header="385"
         text="New Clients"
-        color="gradient-success"
+        color="success"
         inverse
       >
         <CIcon name="cil-userFollow" height="36"/>
@@ -309,7 +308,7 @@
       <CWidgetProgressIcon
         header="1238"
         text="Products sold"
-        color="gradient-warning"
+        color="warning"
         inverse
       >
         <CIcon name="cil-basket" height="36"/>
@@ -317,7 +316,7 @@
       <CWidgetProgressIcon
         header="28%"
         text="Returning Visitors"
-        color="gradient-primary"
+        color="primary"
         inverse
       >
         <CIcon name="cil-chartPie" height="36"/>
@@ -325,7 +324,7 @@
       <CWidgetProgressIcon
         header="5:34:11"
         text="Avg. Time"
-        color="gradient-danger"
+        color="danger"
         inverse
       >
         <CIcon name="cil-speedometer" height="36"/>
@@ -336,7 +335,7 @@
         <CWidgetProgressIcon
           header="87.500"
           text="Visitors"
-          color="gradient-info"
+          color="info"
         >
           <CIcon name="cil-people" height="36"/>
         </CWidgetProgressIcon>
@@ -345,7 +344,7 @@
         <CWidgetProgressIcon
           header="385"
           text="New Clients"
-          color="gradient-success"
+          color="success"
         >
           <CIcon name="cil-userFollow" height="36"/>
         </CWidgetProgressIcon>
@@ -354,7 +353,7 @@
         <CWidgetProgressIcon
           header="1238"
           text="Products sold"
-          color="gradient-warning"
+          color="warning"
         >
           <CIcon name="cil-basket" height="36"/>
         </CWidgetProgressIcon>
@@ -363,7 +362,7 @@
         <CWidgetProgressIcon
           header="28%"
           text="Returning Visitors"
-          color="gradient-primary"
+          color="primary"
         >
           <CIcon name="cil-chartPie" height="36"/>
         </CWidgetProgressIcon>
@@ -372,7 +371,7 @@
         <CWidgetProgressIcon
           header="5:34:11"
           text="Avg. Time"
-          color="gradient-danger"
+          color="danger"
         >
           <CIcon name="cil-speedometer" height="36"/>
         </CWidgetProgressIcon>
@@ -381,7 +380,7 @@
         <CWidgetProgressIcon
           header="972"
           text="comments"
-          color="gradient-info"
+          color="info"
         >
           <CIcon name="cil-speech" height="36"/>
         </CWidgetProgressIcon>
@@ -392,7 +391,7 @@
         <CWidgetProgressIcon
           header="87.500"
           text="Visitors"
-          color="gradient-info"
+          color="info"
           inverse
         >
           <CIcon name="cil-people" height="36"/>
@@ -402,7 +401,7 @@
         <CWidgetProgressIcon
           header="385"
           text="New Clients"
-          color="gradient-success"
+          color="success"
           inverse
         >
           <CIcon name="cil-userFollow" height="36"/>
@@ -412,7 +411,7 @@
         <CWidgetProgressIcon
           header="1238"
           text="Products sold"
-          color="gradient-warning"
+          color="warning"
           inverse
         >
           <CIcon name="cil-basket" height="36"/>
@@ -422,7 +421,7 @@
         <CWidgetProgressIcon
           header="28%"
           text="Returning Visitors"
-          color="gradient-primary"
+          color="primary"
           inverse
         >
           <CIcon name="cil-chartPie" height="36"/>
@@ -432,7 +431,7 @@
         <CWidgetProgressIcon
           header="5:34:11"
           text="Avg. Time"
-          color="gradient-danger"
+          color="danger"
           inverse
         >
           <CIcon name="cil-speedometer" height="36"/>
@@ -442,7 +441,7 @@
         <CWidgetProgressIcon
           header="972"
           text="comments"
-          color="gradient-info"
+          color="info"
           inverse
         >
           <CIcon name="cil-speech" height="36"/>

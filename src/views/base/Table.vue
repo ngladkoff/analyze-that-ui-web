@@ -9,7 +9,7 @@
       <CDataTable
         :hover="hover"
         :striped="striped"
-        :border="border"
+        :bordered="bordered"
         :small="small"
         :fixed="fixed"
         :items="items"
@@ -45,7 +45,7 @@ export default {
     },
     hover: Boolean,
     striped: Boolean,
-    border: Boolean,
+    bordered: Boolean,
     small: Boolean,
     fixed: Boolean,
     dark: Boolean
