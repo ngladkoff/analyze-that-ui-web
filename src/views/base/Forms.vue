@@ -175,7 +175,6 @@
                 horizontal
                 :options="options"
                 placeholder="Please select"
-                custom
               />
               <CSelect
                 label="Select"
@@ -203,50 +202,6 @@
                   </CCol>
                 </CRow>
               </template>
-              <CRow form class="form-group">
-                  <CCol tag="label" sm="3" class="col-form-label">
-                    Switch checkboxes
-                  </CCol>
-                  <CCol sm="9">
-                    <CSwitch
-                      class="mr-1"
-                      color="primary"
-                      :checked="true"
-                    />
-                    <CSwitch
-                      class="mr-1"
-                      color="success"
-                      :checked="true"
-                      variant="outline"
-                    />
-                    <CSwitch
-                      class="mr-1"
-                      color="warning"
-                      :checked="true"
-                      variant="opposite"
-                    />
-                    <CSwitch
-                      class="mr-1"
-                      color="danger"
-                      :checked="true"
-                      shape="pill"
-                    />
-                    <CSwitch
-                      class="mr-1"
-                      color="info"
-                      :checked="true"
-                      shape="pill"
-                      variant="outline"
-                    />
-                    <CSwitch
-                      class="mr-1"
-                      color="dark"
-                      :checked="true"
-                      shape="pill"
-                      variant="opposite"
-                    />
-                  </CCol>
-                </CRow>
               <template v-for="(name, key) in radioNames">
                 <CRow form class="form-group" :key="name">
                   <CCol sm="3">
@@ -578,10 +533,10 @@
               autocomplete="email"
             >
               <template #prepend>
-                <CButton color="primary"><CIcon name="cib-facebook"/></CButton>
+                <CButton color="primary"><CIcon name="cib-facebook" height="14"/></CButton>
               </template>
               <template #append>
-                <CButton color="primary"><CIcon name="cib-twitter"/></CButton>
+                <CButton color="primary"><CIcon name="cib-twitter" height="14"/></CButton>
               </template>
             </CInput>
           </CCardBody>

@@ -8,31 +8,32 @@
     <template #toggler>
       <CHeaderNavLink>
         <div class="c-avatar">
-          <img
-            src="img/avatars/6.jpg"
+          <CIcon name="cil-contact" width="24"/>
+          <!-- <img
+            src="img/avatars/7.jpg"
             class="c-avatar-img "
-          />
+          /> -->
         </div>
       </CHeaderNavLink>
     </template>
-    <CDropdownHeader tag="div" class="text-center" color="light">
+    <!-- <CDropdownHeader tag="div" class="text-center" color="light">
       <strong>Account</strong>
     </CDropdownHeader>
     <CDropdownItem>
       <CIcon name="cil-bell"/> Updates
-      <CBadge color="info" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="info" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
     <CDropdownItem>
       <CIcon name="cil-envelope-open" /> Messages
-      <CBadge color="success" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="success" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
     <CDropdownItem>
       <CIcon name="cil-task" /> Tasks
-      <CBadge color="danger" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="danger" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
     <CDropdownItem>
       <CIcon name="cil-comment-square" /> Comments
-      <CBadge color="warning" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="warning" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
     <CDropdownHeader
       tag="div"
@@ -49,16 +50,16 @@
     </CDropdownItem>
     <CDropdownItem>
       <CIcon name="cil-dollar" /> Payments
-      <CBadge color="secondary" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="secondary" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
     <CDropdownItem>
       <CIcon name="cil-file" /> Projects
-      <CBadge color="primary" class="mfs-auto">{{ itemsCount }}</CBadge>
+      <CBadge color="primary" class="ml-auto">{{ itemsCount }}</CBadge>
     </CDropdownItem>
-    <CDropdownDivider/>
-    <CDropdownItem>
+    <CDropdownDivider/> -->
+    <!-- <CDropdownItem>
       <CIcon name="cil-shield-alt" /> Lock Account
-    </CDropdownItem>
+    </CDropdownItem> -->
     <CDropdownItem>
       <CIcon name="cil-lock-locked" /> Logout
     </CDropdownItem>
