@@ -56,6 +56,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 
 export default {
   name: 'GamesData',
@@ -63,12 +64,25 @@ export default {
   },
   data () {
     return {
+      dummys: []
     }
   },
   methods: {
     newGame() {
-      this.$router.push({ path: 'new'})
-    }
+      // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+      axios.get('http://localhost:5000/api/v1/dummy/').then(
+        (response) => {
+          this.dummys = response.data;
+          alert(this.dummys[0].name);
+          this.$router.push({ path: 'new'})
+        }
+      )
+      .catch(
+        (e) => {
+          console.log(e)
+        }
+      );
+    },
   }
 }
 </script>
