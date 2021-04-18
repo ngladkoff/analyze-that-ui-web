@@ -69,8 +69,7 @@ export default {
   },
   methods: {
     newGame() {
-      // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-      axios.get('http://localhost:5000/api/v1/dummy/').then(
+      axios.get('http://localhost:8000/api/v1/dummy/').then(
         (response) => {
           this.dummys = response.data;
           alert(this.dummys[0].name);
