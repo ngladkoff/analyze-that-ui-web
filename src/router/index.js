@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { authGuard } from "../auth/authGuard"
 
 // Containers
 const TheContainer = () => import('@/containers/TheContainer')
@@ -72,13 +73,14 @@ export default new Router({
   scrollBehavior: () => ({ y: 0 }),
   routes: configRoutes()
 })
-
+//       beforeEnter: authGuard,
 function configRoutes () {
   return [
     {
       path: '/',
       redirect: '/dashboard',
       name: 'Home',
+      beforeEnter: authGuard,
       component: TheContainer,
       children: [
         {

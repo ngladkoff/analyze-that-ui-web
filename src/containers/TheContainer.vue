@@ -1,4 +1,5 @@
 <template>
+
   <div class="c-app">
     <TheSidebar/>
     <CWrapper>
@@ -15,6 +16,7 @@
       <TheFooter/>
     </CWrapper>
   </div>
+
 </template>
 
 <script>
