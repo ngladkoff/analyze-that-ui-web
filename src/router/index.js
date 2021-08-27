@@ -10,7 +10,10 @@ const Dashboard = () => import('@/views/Dashboard')
 const Games = () => import('@/views/games/Games')
 const GamesList = () => import('@/views/games/GamesList')
 const GamesNew = () => import('@/views/games/GamesNew')
-const GamesAnalytics = () => import('@/views/games/GamesAnalytics')
+const GameView = () => import('@/views/games/GameView')
+const Analytics = () => import('@/views/analytics/Analytics')
+const AnalyticsList = () => import('@/views/analytics/AnalyticsList')
+const AnalyticsView = () => import('@/views/analytics/AnalyticsView')
 const SettingsDiscover = () => import('@/views/settings/SettingsDiscover')
 const SettingsSelection = () => import('@/views/settings/SettingsSelection')
 const SettingsModels = () => import('@/views/settings/SettingsModels')
@@ -105,27 +108,48 @@ function configRoutes () {
               component: GamesList
             },
             {
-              path: 'analytics',
-              name: 'Análisis',
-              component: GamesAnalytics
-            }
+              path: 'view/:id',
+              name: 'Ver',
+              component: GameView,
+              props: true
+            },
           ]
         },
         {
-          path: 'settings/discover',
-          name: 'Descubrimiento',
-          component: SettingsDiscover
+          path: 'analytics',
+          name: 'Análisis',
+          redirect: '/analytics/list',
+          component: Analytics,
+          children: [
+            {
+              path: 'list',
+              name: 'Lista',
+              component: AnalyticsList
+            },
+            {
+              path: 'view/:id',
+              name: 'Ver',
+              component: AnalyticsView,
+              props: true
+            },
+          ]
         },
-        {
-          path: 'settings/selection',
-          name: 'Selección',
-          component: SettingsSelection
-        },
-        {
-          path: 'settings/models',
-          name: 'Modelado',
-          component: SettingsModels
-        },
+
+        // {
+        //   path: 'settings/discover',
+        //   name: 'Descubrimiento',
+        //   component: SettingsDiscover
+        // },
+        // {
+        //   path: 'settings/selection',
+        //   name: 'Selección',
+        //   component: SettingsSelection
+        // },
+        // {
+        //   path: 'settings/models',
+        //   name: 'Modelado',
+        //   component: SettingsModels
+        // },
 
         // {
         //   path: 'theme',

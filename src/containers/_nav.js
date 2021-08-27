@@ -25,31 +25,31 @@ export default [
       {
         _name: 'CSidebarNavItem',
         name: 'Análisis',
-        to: '/games/analytics',
+        to: '/analytics',
         icon: 'cil-chart-line'
       },
-      {
-        _name: 'CSidebarNavTitle',
-        _children: ['Configuraciones']
-      },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Descubrimiento',
-        to: '/settings/discover',
-        icon: 'cil-lightbulb'
-      },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Selección',
-        to: '/settings/selection',
-        icon: 'cil-highligt'
-      },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Modelado',
-        to: '/settings/models',
-        icon: 'cil-gem'
-      }
+      // {
+      //   _name: 'CSidebarNavTitle',
+      //   _children: ['Configuraciones']
+      // },
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Descubrimiento',
+      //   to: '/settings/discover',
+      //   icon: 'cil-lightbulb'
+      // },
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Selección',
+      //   to: '/settings/selection',
+      //   icon: 'cil-highligt'
+      // },
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Modelado',
+      //   to: '/settings/models',
+      //   icon: 'cil-gem'
+      // }
     ]
   }
 ]

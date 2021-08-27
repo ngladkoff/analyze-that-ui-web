@@ -138,6 +138,7 @@ export const useAuth0 = ({
                 this.auth0Client.getUser().then((user) => {
                   this.user = user;
                   this.loading = false;
+                  window.history.replaceState({}, document.title, window.location.origin + '/#')
                 })
               })
             })

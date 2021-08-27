@@ -21,7 +21,7 @@
         :height="35"
         viewBox="0 0 512 512"
       /></div>
-      <div>
+      <div v-if="!minimize">
       <span>Analyze That</span>
       </div>
     </CSidebarBrand>

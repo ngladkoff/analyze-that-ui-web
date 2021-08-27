@@ -2,24 +2,23 @@
   <div>
     <CRow>
       <CCol>
-        <CButton color="primary" variant="outline" class="m-2" @click="newGame">Nuevo Juego</CButton>
+        <CButton color="primary" variant="outline" class="m-2" to="/games/new">Nuevo Juego</CButton>
       </CCol>
     </CRow>
     <div style="padding:10px;"></div>
     <CRow>
-      <CCol col="12" sm="6" lg="6">
+      <CCol col="12" sm="6" lg="6" v-for="game in games">
         <CWidgetIcon
-          header="Scrum Game"
-          text="Juego para enseñanza de Scrum"
+          :header="game.name"
+          :text="game.description"
           color="primary"
           :icon-padding="false"
         >
-          <CIcon name="cil-casino" width="24"/>
+          <CIcon :name="game.icon" width="24"/>
           <template #footer>
             <CCardFooter class="card-footer px-3 py-2">
-              <CLink
+              <CLink :to="'/games/view/'+game.id"
                 class="font-weight-bold font-xs btn-block text-muted"
-                href="https://coreui.io/"
               >
                 Ver mas
                 <CIcon name="cil-arrowRight" class="float-right" width="16"/>
@@ -28,60 +27,29 @@
           </template>
         </CWidgetIcon>
       </CCol>
-      <CCol col="12" sm="6" lg="6">
-        <CWidgetIcon
-          header="Platform Game"
-          text="Juego de plataforma para medición de variables psicológicas"
-          color="primary"
-          :icon-padding="false"
-        >
-          <CIcon name="cil-running" width="24"/>
-          <template #footer>
-            <CCardFooter class="card-footer px-3 py-2">
-              <CLink
-                class="font-weight-bold font-xs btn-block text-muted"
-                href="https://coreui.io/"
-              >
-                Ver mas
-                <CIcon name="cil-arrowRight" class="float-right" width="16"/>
-              </CLink>
-            </CCardFooter>
-          </template>
-        </CWidgetIcon>
-      </CCol>
-
     </CRow>
 
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+
+import store from '../../store'
+import { mapActions, mapMutations, mapState } from 'vuex'
 
 export default {
   name: 'GamesData',
   components: {
   },
-  data () {
-    return {
-      dummys: []
-    }
+  computed: {
+    ...mapState(['games'])
   },
   methods: {
-    newGame() {
-      axios.get('http://localhost:8000/api/v1/dummy/').then(
-        (response) => {
-          this.dummys = response.data;
-          alert(this.dummys[0].name);
-          this.$router.push({ path: 'new'})
-        }
-      )
-      .catch(
-        (e) => {
-          console.log(e)
-        }
-      );
-    },
-  }
+    ...mapMutations(['loadGamesList']),
+    ...mapActions(['getGamesList'])
+  },
+  created() {
+    store.dispatch('getGamesList')
+  },
 }
 </script>
